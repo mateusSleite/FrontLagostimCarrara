@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Insanicbc;
+    src: url(../../assets/font/Insanibc.ttf);
+}
+
+@font-face {
+    font-family: Ghothan;
+    src: url(../../assets/font/Gotham-Bold.otf);
+}
+
+.up {
+    background-color: #c94f2d;
+    height: 5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uptext {
+    color: white;
+    font-family: Ghothan;
+    font-size: 1.4em;
+}
+
+.textologcas {
+    font-family: Ghothan;
+    font-size: 0.8em;
+    margin-left: 0.2em;
+}
+
+.senha {
+    border: none; 
+    background: none; 
+    outline: none; 
+    width: 100%; 
+    height: 100%; 
+    color: white; 
+    padding-left: 0.5em; 
+    border-radius: 10px;
+    font-family: Ghothan;
+}
+
+.login {
+    margin-top: 1.8em;
+    width: 6em;
+    height: 2.2em;
+    background-color: #422b20;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.entrarto {
+    display: flex;
+    justify-content: center;
+}
+
+.entrarto a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.addmsn {
+    font-size: 0.8em;
+    font-family: Ghothan;
+}
+
+input::placeholder
+{
+    color: #ffffff;
+    font-size: 0.8em;
+}

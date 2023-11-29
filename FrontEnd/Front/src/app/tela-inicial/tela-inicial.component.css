@@ -1,0 +1,127 @@
+@font-face {
+    font-family: Insanicbc;
+    src: url(../../assets/font/Insanibc.ttf);
+}
+
+
+.principal {
+    width: 51em;
+}
+
+.logo {
+    width: 8em;
+    margin-top: 3em;
+}
+
+.login {
+    width: 16em;
+    height: 3em;
+    background-color: #c94f2d;
+    border-radius: 6px;
+    margin-top: 5em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.add {
+    width: 1.4em;
+    height: 1.2em;
+    margin-left: 0.7em;
+    outline: none;
+}
+
+.addmsn {
+    margin-left: 0.8em;
+    font-size: 0.9em;
+    font-family: Insanicbc;
+}
+
+.opcoes {
+    font-size: 1.0em;
+    margin-left: 0.1em;
+    color: white;
+    font-family: Insanicbc;
+}
+
+.opc1 {
+    width: 20%;
+    height: 2.5em;
+    background-color: #422b20;
+    margin-right: 0.2em;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.opc2 {
+    width: 20%;
+    height: 2.5em;
+    background-color: #422b20;
+    margin-right: 0.2em;
+    display: flex;
+    align-items: center;
+}
+
+.opc3 {
+    width: 20%;
+    height: 2.5em;
+    background-color: #422b20;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-indicators {
+    margin-left: 0;
+}
+
+.carousel-item img {
+    border-radius: 1em;
+    width: 88% !important;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon img {
+    width: 2.2em;
+    height: 2.2em;
+}
+
+.carousel-control-prev-icon {
+    margin-right: 2.5em;
+}
+
+.carousel-control-next-icon img {
+    width: 2.2em;
+    height: 2.2em;
+}
+
+.carousel-control-next-icon {
+    margin-left: 2.3em;
+}
+
+.carousel-control-next {
+    opacity: 1 !important;
+}
+
+.carousel-control-prev {
+    opacity: 1 !important;
+}
+
+.carousel-item-start {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item-end {
+    display: flex;
+    justify-content: center;
+}
