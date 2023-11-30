@@ -1,13 +1,10 @@
 using System;
-using System.Net;
-using System.Net.Http;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
 using Back.Model;
 using Back.Services;
-using System.Security.Cryptography;
 using Trevisharp.Security.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5MNmhSZq9OR4/FAv06kd60wrcRsmvsEDvAVCLmn2l0XuhlfULqEaY1PTvCJxQAsES5wcGl6jayH3j15Cng0Uzg==",
+  "dgSpecHash": "l+66DTkp/7jaNFPR1x6U3n3CsmBqPt8HB4A0sHuLKVHNbeTRPg70+EkTEUK+Jtoj2u3SUEr/ZnAUN/Q2lHXU5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\disrct\\Desktop\\ProjectLagostim\\back\\Back.csproj",
+  "projectFilePath": "C:\\Users\\disrct\\Desktop\\ProjectLagostim\\Back\\Back.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\disrct\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\disrct\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

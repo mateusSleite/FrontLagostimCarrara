@@ -1,19 +1,11 @@
-using System;
-using System.IO;
-using System.Linq;
-using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
 using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
 
 namespace Back.Controllers;
 
-using System.Security.Cryptography;
 using DTO;
-using Microsoft.AspNetCore.Mvc.Formatters.Xml;
-using Model;
 using Services;
 using Trevisharp.Security.Jwt;
 
@@ -24,15 +16,13 @@ public class UsuarioController : ControllerBase
     [HttpPost("login")]
     [EnableCors("DefaultPolicy")]
     public async Task<IActionResult> Login(
-        [FromBody]UserData user,
+        [FromBody]UserDataLogin user,
         [FromServices]IUsuarioService service,
         [FromServices]ISecurityService security,
         [FromServices]CryptoService crypto)
     {
         var loggedUser = await service
             .GetByLogin(user.Cpf);
-
-        Console.WriteLine(user.Cpf);
         
         if (loggedUser == null)
             return Unauthorized("Usuário não existe.");

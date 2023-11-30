@@ -27,7 +27,7 @@ public partial class BackDbContext : DbContext
     {
         modelBuilder.Entity<Imagem>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Imagem__3214EC279B805E29");
+            entity.HasKey(e => e.Id).HasName("PK__Imagem__3214EC27391A5004");
 
             entity.ToTable("Imagem");
 
@@ -37,7 +37,7 @@ public partial class BackDbContext : DbContext
 
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Usuario__3214EC27B2E12CAD");
+            entity.HasKey(e => e.Id).HasName("PK__Usuario__3214EC277080E188");
 
             entity.ToTable("Usuario");
 
@@ -49,7 +49,7 @@ public partial class BackDbContext : DbContext
             entity.Property(e => e.DataNasc).HasColumnType("date");
             entity.Property(e => e.Email)
                 .IsRequired()
-                .HasMaxLength(20)
+                .HasMaxLength(200)
                 .IsUnicode(false);
             entity.Property(e => e.ImagemId).HasColumnName("ImagemID");
             entity.Property(e => e.Nome)

@@ -11,6 +11,7 @@ go
 use BackDB
 go
 
+
 create table Imagem(
 	ID int identity primary key,
 	Foto varbinary(MAX) not null
@@ -21,7 +22,7 @@ create table Usuario(
 	ID int identity primary key,
 	Nome varchar(80) not null,
 	Cpf varchar(20) not null,
-	Email varchar(20) not null,
+	Email varchar(200) not null,
 	DataNasc date not null,
 	Numero varchar(20) not null,
 	Senha varchar(MAX) not null,
@@ -30,3 +31,5 @@ create table Usuario(
 	ImagemID int references Imagem(ID)
 );
 go
+
+select * from Usuario
