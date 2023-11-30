@@ -75,14 +75,19 @@
                         <span class="textologcas">Confirmação Senha:</span>
                         <div style="width: 14em; height: 2em; background-color: #422b20; border-radius: 10px; display: flex; align-items: center;">
                             <img src="../../assets/img/usuario.png" style="width: 1.4em; height: 1.4em; margin-left: 0.5em;">
-                            <input type="password" placeholder="Repita sua Senha" class="senha" [(ngModel)]="confirmpassword">
+                            <input type="password" placeholder="Repita sua Senha" class="senha" [(ngModel)]="confirmpassword" >
                         </div>
                     </div>
                 </div>
                 <div class="entrarto">
-                    <a routerLink="/login" class="login d-flex align-items-center" (click)="create()">
+                    <a style="cursor: pointer;" class="login d-flex align-items-center" (click)="create()">
                       <span class="addmsn">Cadastrar</span>
                     </a>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <p *ngIf="empty" class="error-message">Todos os campos precisam estar preenchidos</p>
+                    <p *ngIf="cpfError" class="error-message">CPF Inválido</p>
+                    <p *ngIf="senhaError" class="error-message">As senhas não coincidem</p>
                 </div>
             </div>
           </div>
