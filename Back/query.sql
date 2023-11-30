@@ -32,4 +32,4 @@ create table Usuario(
 );
 go
 
-select * from Usuario
+select * from Usuario																	
