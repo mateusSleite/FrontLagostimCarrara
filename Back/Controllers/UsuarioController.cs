@@ -36,7 +36,6 @@ public class UsuarioController : ControllerBase
 
         var jwt = crypto.GetToken(new {
             id = loggedUser.Id,
-            photoId = loggedUser.ImagemId,
             isAdm = loggedUser.Adm,
             name = loggedUser.Nome
         });

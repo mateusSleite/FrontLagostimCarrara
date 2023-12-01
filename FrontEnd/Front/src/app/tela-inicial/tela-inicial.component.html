@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <div class="container d-flex mt-5 justify-content-center mb-5">
+    <div *ngIf="!isAdm" class="container d-flex mt-5 justify-content-center mb-5">
       <a href="" class="opc1">
         <div style="display: flex; justify-content: center; width: 100%;">
           <img src="../../assets/img/burger.png" style="height: 1.4em; width: 1.4em; margin-right: 0.2em;">
@@ -55,6 +55,40 @@
         </div>
       </a>
     </div>
+
+    <div *ngIf="isAdm" class="container d-flex mt-5 justify-content-center mb-5">
+      <a href="" class="opc1adm">
+        <div style="display: flex; justify-content: center; width: 100%; align-items: center;">
+          <img src="../../assets/img/burger.png" style="height: 1.2em; width: 1.2em; margin-right: 0.2em;">
+          <span class="opcoesadm">CARDÁPIO</span>
+        </div>
+      </a> 
+      <a href="" class="opc2adm">
+          <div style="display: flex; justify-content: center; width: 100%; align-items: center;">
+            <img src="../../assets/img/cupom.png" style="height: 1.2em; width: 1.2em; margin-right: 0.2em;">
+            <span class="opcoesadm">PROMOÇÕES</span>
+        </div>
+      </a>
+      <a href="" class="opc2adm">
+          <div style="display: flex; justify-content: center; width: 100%; align-items: center;">
+            <img src="../../assets/img/carrinho.png" style="height: 1.2em; width: 1.2em; margin-right: 0.2em;">
+            <span class="opcoesadm">PEDIDOS</span>
+        </div>
+      </a>
+      <a href="" class="opc2adm">
+          <div style="display: flex; justify-content: center; width: 100%; align-items: center;">
+            <img src="../../assets/img/totem.png" style="height: 1.2em; width: 1em; margin-right: 0.2em;">
+            <span class="opcoesadm">TOTEM</span>
+        </div>
+      </a>
+      <a href="" class="opc3adm">
+        <div style="display: flex; justify-content: center; width: 100%; align-items: center;">
+          <img src="../../assets/img/dados.png" style="height: 1.1em; width: 1.1em; margin-right: 0.2em;">
+          <span class="opcoesadm">DASHBOARD</span>
+        </div>
+      </a>
+    </div>
+
     <div class="container">
       <div class="row">
         <div class="col-sm-2"></div>

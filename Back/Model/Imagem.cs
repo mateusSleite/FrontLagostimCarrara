@@ -9,5 +9,7 @@ public partial class Imagem
 
     public byte[] Foto { get; set; }
 
-    public virtual ICollection<Usuario> Usuarios { get; } = new List<Usuario>();
+    public virtual ICollection<Produto> Produtos { get; } = new List<Produto>();
+
+    public virtual ICollection<Promocao> Promocaos { get; } = new List<Promocao>();
 }

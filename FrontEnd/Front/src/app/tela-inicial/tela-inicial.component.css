@@ -70,6 +70,14 @@ a {
     font-family: Insanicbc;
 }
 
+.opcoesadm {
+    font-size: 0.9em;
+    margin-left: 0.1em;
+    color: white;
+    font-family: Insanicbc;
+}
+
+
 .opc1 {
     width: 20%;
     height: 2.5em;
@@ -92,6 +100,36 @@ a {
 
 .opc3 {
     width: 20%;
+    height: 2.5em;
+    background-color: #422b20;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.opc1adm {
+    width: 12%;
+    height: 2.5em;
+    background-color: #422b20;
+    margin-right: 0.2em;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.opc2adm {
+    width: 12%;
+    height: 2.5em;
+    background-color: #422b20;
+    margin-right: 0.2em;
+    display: flex;
+    align-items: center;
+}
+
+.opc3adm {
+    width: 12%;
     height: 2.5em;
     background-color: #422b20;
     border-bottom-right-radius: 10px;

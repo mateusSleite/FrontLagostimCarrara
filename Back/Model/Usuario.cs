@@ -23,7 +23,5 @@ public partial class Usuario
 
     public bool Adm { get; set; }
 
-    public int? ImagemId { get; set; }
-
-    public virtual Imagem Imagem { get; set; }
+    public virtual ICollection<Pedido> Pedidos { get; } = new List<Pedido>();
 }

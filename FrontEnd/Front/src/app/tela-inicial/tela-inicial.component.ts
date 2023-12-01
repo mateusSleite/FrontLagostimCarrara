@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TelaInicialComponent implements OnInit {
   jwtToken: string | null;
   nomeUsuario: string | undefined;
+  isAdm : boolean | undefined;
   objJwt: any;
 
   constructor() {
@@ -20,6 +21,10 @@ export class TelaInicialComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    this.isAdm = this.objJwt.isAdm;
+
+    console.log(this.isAdm);
 
     if (this.jwtToken) {
       const partName = this.objJwt.name.split(' ');
