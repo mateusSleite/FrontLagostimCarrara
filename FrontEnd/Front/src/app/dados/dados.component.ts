@@ -34,9 +34,10 @@ export class DadosComponent {
       return;
     }
 
+    this.cpf = this.cpf.replace(/[.-]/g, '');
+    
     if (!CpfCnpjValidator.cpf.isValid(this.cpf)) {
       this.cpfError = true;
-      
       this.router.navigate(['/cadastro']);
       return;
     }

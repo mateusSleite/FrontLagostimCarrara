@@ -10,12 +10,14 @@ import { AppComponent } from './app.component';
 import { TelaInicialComponent } from './tela-inicial/tela-inicial.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { DadosComponent } from './dados/dados.component';
+import { UserGuard } from './guard/user.guard';
+
 
 const routes: Routes = [
-  { path: 'tela-inicial', component: TelaInicialComponent },
-  { path: 'login', component: CadastroComponent },
-  { path: 'cadastro', component: DadosComponent },
-  { path: '', redirectTo: '/tela-inicial', pathMatch: 'full' }
+  { path: '', component: TelaInicialComponent },
+  { path: 'login', component: CadastroComponent, canActivate: [UserGuard] },
+  { path: 'cadastro', component: DadosComponent, canActivate: [UserGuard] },
+  { path: '', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -33,7 +35,7 @@ const routes: Routes = [
     HttpClientModule
   ],
   exports: [RouterModule],
-  providers: [ClientServiceService],
+  providers: [ClientServiceService , UserGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

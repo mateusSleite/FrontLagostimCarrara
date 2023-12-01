@@ -15,12 +15,22 @@
           <div>
             <img class="logo" src="../assets/img/logo.png" />
           </div>
-          <a routerLink="/login" class="login d-flex align-items-center">
-            <div>
+          <a routerLink="/login" *ngIf="!nomeUsuario" class="login d-flex align-items-center justify-content-center">
+            <div style="display: flex; align-items: center;">
               <img class="add" src="../assets/img/add.png" />
+              <span class="addmsn">ENTRE OU FAÇA SEU CADASTRO</span>
             </div>
-            <span class="addmsn">ENTRE OU FAÇA SEU CADASTRO</span>
           </a>
+          <div *ngIf="nomeUsuario" style="display: flex;">
+              <a routerLink="/tela-inicial" class="user d-flex align-items-center justify-content-center">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                  <span class="addmsn" style="font-size: 0.95em; margin: 0;" >BEM VINDO {{nomeUsuario}}</span>
+                </div>
+              </a>
+              <a href="" class="sair" (click)="logout()">
+                <img src="../../assets/img/sair.png" style="width: 1.5em; height: 1.5em;"  alt="">
+              </a>
+          </div>
         </div>
       </div>
     </div>

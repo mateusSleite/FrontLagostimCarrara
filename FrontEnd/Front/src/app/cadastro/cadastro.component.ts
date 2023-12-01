@@ -17,6 +17,9 @@ export class CadastroComponent {
   erroLogin: boolean = false;
 
   logar() {
+
+    this.username = this.username.replace(/[.-]/g, '');
+
     this.client.login(
       {
         Cpf: this.username,
@@ -28,7 +31,7 @@ export class CadastroComponent {
           this.router.navigate(['/login']);
         } else {
           sessionStorage.setItem('jwt', JSON.stringify(result));
-          this.router.navigate(['/tela-inicial']);
+          this.router.navigate(['/']);
         }
       }
     );

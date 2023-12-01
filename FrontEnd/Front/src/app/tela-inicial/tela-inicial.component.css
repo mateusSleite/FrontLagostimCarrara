@@ -13,12 +13,35 @@
     margin-top: 3em;
 }
 
+.user {
+    width: 13em;
+    height: 3em;
+    background-color: #c94f2d;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    margin-top: 5em;
+}
+
 .login {
     width: 16em;
     height: 3em;
     background-color: #c94f2d;
     border-radius: 6px;
     margin-top: 5em;
+}
+
+.sair {
+    width: 3em;
+    height: 3em;
+    background-color: #c94f2d;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-top: 5em;
+    margin-left: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 a {
@@ -31,6 +54,7 @@ a {
     height: 1.2em;
     margin-left: 0.7em;
     outline: none;
+    margin: 0;
 }
 
 .addmsn {
