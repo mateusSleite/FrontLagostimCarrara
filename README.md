@@ -5,7 +5,7 @@ Obs: 'Tem tela/Tem Interface' = Possui parte visual, mesmo sem funcionar.
 - [x] Possui tela de Login.
 - [x] Possui tela de cadastro.
 - [x] Possui tela de usuário normal das promoções.
-- [ ] Possui tela para visualizar código da promoção.
+- [x] Possui tela para visualizar código da promoção.
 - [x] Possui tela de Administrador.
 - [ ] Possui tela de Pedidos.
 - [ ] Possui tela de Cadastro de Produtos.

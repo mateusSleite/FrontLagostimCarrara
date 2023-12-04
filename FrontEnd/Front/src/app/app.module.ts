@@ -11,12 +11,16 @@ import { TelaInicialComponent } from './tela-inicial/tela-inicial.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { DadosComponent } from './dados/dados.component';
 import { UserGuard } from './guard/user.guard';
+import { CardapioComponent } from './cardapio/cardapio.component';
+import { CupomComponent } from './cupom/cupom.component';
 
 
 const routes: Routes = [
   { path: '', component: TelaInicialComponent },
   { path: 'login', component: CadastroComponent, canActivate: [UserGuard] },
   { path: 'cadastro', component: DadosComponent, canActivate: [UserGuard] },
+  { path: 'cardapio', component: CardapioComponent},
+  { path: 'cupom', component: CupomComponent},
   { path: '', redirectTo: '', pathMatch: 'full' }
 ];
 
@@ -25,7 +29,9 @@ const routes: Routes = [
     AppComponent,
     TelaInicialComponent,
     CadastroComponent,
-    DadosComponent
+    DadosComponent,
+    CardapioComponent,
+    CupomComponent
   ],
   imports: [
     BrowserModule,

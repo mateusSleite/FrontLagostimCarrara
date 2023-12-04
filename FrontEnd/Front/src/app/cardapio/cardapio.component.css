@@ -1,0 +1,79 @@
+:host {
+    display: block;
+    position: relative;
+    min-height: 100vh;
+}
+
+:host::after {
+    content: '';
+    position: absolute;
+    top: 25em;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: #c94f2d;
+    z-index: -1;
+}
+
+
+@font-face {
+    font-family: Insanicbc;
+    src: url(../../assets/font/Insanibc.ttf);
+}
+
+@font-face {
+    font-family: Ghothan;
+    src: url(../../assets/font/Gotham-Bold.otf);
+}
+
+.titulo {
+    font-size: 2.8em;
+    color: #422b20;
+    font-family: Insanicbc;
+    margin-left: 0.2em;
+}
+
+.sec {
+    background-color: white;
+    margin-top: 2em;
+    border-radius: 20px;
+    width: 50em;
+    height: 43em;
+}
+
+.cupons {
+    background-color: white;
+    width: 10em;
+    height: 10em;
+}
+
+.card {
+    margin-top: 1em;
+    margin-left: 0.5em;
+    width: 100%;
+    height: 18em;
+    background-color: #422b20;
+    border-left: 15px solid transparent;
+}
+
+.tipos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tiposborda {
+    background-color: #422b20;
+    width: 8em;
+    height: 2em;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.8em;
+}
+
+.textipo {
+    font-family: Insanicbc;
+    font-size: 0.8em;
+    color: white;
+}
