@@ -1,0 +1,97 @@
+<div>
+    <div class="up">
+      <img
+        src="../../../assets/img/cadeado.png"
+        style="height: 2em; width: 2em; margin-right: 0.5em"
+      />
+      <span class="uptext">Acesse sua Conta Lagostim Carrara</span>
+    </div>
+    <div>
+      <div
+        class="container prin shadow-lg blob"
+        style="
+          background-color: white;
+          border-radius: 81% 19% 81% 19% / 21% 81% 19% 79%;
+          height: 45em;
+          width: 40em;
+          margin-top: 8em;
+        "
+      >
+          <div style="display: flex; justify-content: center;">
+              <img src="../../../assets/img/logo.png" style="height: 12em; width: 12em; margin-top: 3em; margin-bottom: 3em;">
+          </div>
+          <div class="d-flex justify-content-center">
+            <div style="background-color: #c94f2d; border-radius: 20px; width: 80%; height: 20.5em;">
+                <div class="d-flex justify-content-evenly" style="margin-top: 0.8em;">
+                    <div class="d-flex flex-column">
+                        <span class="textologcas">Nome:</span>
+                        <div style="width: 14em; height: 2em; background-color: #422b20; border-radius: 10px; display: flex; align-items: center;">
+                            <img src="../../../assets/img/usuario.png" style="width: 1.4em; height: 1.4em; margin-left: 0.5em;">
+                            <input type="text" placeholder="Digite seu Nome" class="senha" [(ngModel)]="nome">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <span class="textologcas">CPF:</span>
+                        <div style="width: 14em; height: 2em; background-color: #422b20; border-radius: 10px; display: flex; align-items: center;">
+                            <img src="../../../assets/img/usuario.png" style="width: 1.4em; height: 1.4em; margin-left: 0.5em;">
+                            <input type="text" placeholder="Digite seu CPF" class="senha" [(ngModel)]="cpf">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-evenly" style="margin-top: 0.5em;">
+                    <div class="d-flex flex-column">
+                        <span class="textologcas">Email:</span>
+                        <div style="width: 29em; height: 2em; background-color: #422b20; border-radius: 10px; display: flex; align-items: center;">
+                            <img src="../../../assets/img/usuario.png" style="width: 1.4em; height: 1.4em; margin-left: 0.5em;">
+                            <input type="text" placeholder="Digite seu Email" class="senha" [(ngModel)]="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-evenly" style="margin-top: 0.5em;">
+                    <div class="d-flex flex-column">
+                        <span class="textologcas">Data de Nascimento:</span>
+                        <div style="width: 14em; height: 2em; background-color: #422b20; border-radius: 10px; display: flex; align-items: center;">
+                            <img src="../../../assets/img/usuario.png" style="width: 1.4em; height: 1.4em; margin-left: 0.5em;">
+                            <input type="date" placeholder="Digite sua Data de Nascimento" class="senha" style="margin-right: 0.2em;" [(ngModel)]="data">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <span class="textologcas">Celular:</span>
+                        <div style="width: 14em; height: 2em; background-color: #422b20; border-radius: 10px; display: flex; align-items: center;">
+                            <img src="../../../assets/img/usuario.png" style="width: 1.4em; height: 1.4em; margin-left: 0.5em;">
+                            <input type="tel" placeholder="Digite seu Número" class="senha" [(ngModel)]="numero">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-evenly" style="margin-top: 0.5em;">
+                    <div class="d-flex flex-column">
+                        <span class="textologcas">Senha:</span>
+                        <div style="width: 14em; height: 2em; background-color: #422b20; border-radius: 10px; display: flex; align-items: center;">
+                            <img src="../../../assets/img/usuario.png" style="width: 1.4em; height: 1.4em; margin-left: 0.5em;">
+                            <input type="password" placeholder="Digite sua Senha" class="senha" [(ngModel)]="senha">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <span class="textologcas">Confirmação Senha:</span>
+                        <div style="width: 14em; height: 2em; background-color: #422b20; border-radius: 10px; display: flex; align-items: center;">
+                            <img src="../../../assets/img/usuario.png" style="width: 1.4em; height: 1.4em; margin-left: 0.5em;">
+                            <input type="password" placeholder="Repita sua Senha" class="senha" [(ngModel)]="confirmpassword" >
+                        </div>
+                    </div>
+                </div>
+                <div class="entrarto">
+                    <a style="cursor: pointer;" class="login d-flex align-items-center" (click)="create()">
+                      <span class="addmsn">Cadastrar</span>
+                    </a>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <p *ngIf="empty" class="error-message">Todos os campos precisam estar preenchidos</p>
+                    <p *ngIf="cpfError" class="error-message">CPF Inválido</p>
+                    <p *ngIf="senhaError" class="error-message">As senhas não coincidem</p>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  

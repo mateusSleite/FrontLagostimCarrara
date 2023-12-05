@@ -1,0 +1,89 @@
+<div>
+  <div class="up">
+    <img
+      src="../../assets/img/cadeado.png"
+      style="height: 2em; width: 2em; margin-right: 0.5em"
+    />
+    <span class="uptext">Acesse sua Conta Lagostim Carrara</span>
+  </div>
+  <div>
+    <div
+      class="container prin shadow-lg blob"
+      style="
+        background-color: white;
+        border-radius: 81% 19% 81% 19% / 21% 81% 19% 79%;
+        height: 40em;
+        width: 40em;
+        margin-top: 8em;
+      "
+    >
+        <div style="display: flex; justify-content: center;">
+            <img src="../../../assets/img/logo.png" style="height: 12em; width: 12em; margin-top: 3em; margin-bottom: 3em;">
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-evenly" style="background-color: #c94f2d; border-radius: 20px; width: 80%; height: 15em;">
+                <div class="d-flex flex-column" style="width: 11.6em; margin-top: 3.5em;">
+                    <span class="cadlog">Cadastre-se ou Entre e Aproveite: </span>
+                    <div style="margin-top: 0.8em;">
+                      <img src="../../../assets/img/burgerciruclo.png" style="width: 1.5em; height: 1.5em;">
+                      <span class="textlogin" style="margin-right: 0.6em;">Lanches</span>
+                      <img src="../../../assets/img/desccirculo.png" style="width: 1.5em; height: 1.5em;">
+                      <span class="textlogin">Descontos</span>
+                    </div>
+                    <div style="margin-top: 0.8em;">
+                      <img src="../../../assets/img/cupomcirculo.png" style="width: 1.5em; height: 1.5em;">
+                      <span class="textlogin" style="margin-right: 0.8em;">Cupons</span>
+                      <img src="../../../assets/img/variedade.png" style="width: 1.5em; height: 1.5em;">
+                      <span class="textlogin">Variedade</span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center flex-column mt-2">
+                    <span style="height: 1.1em;">|</span>
+                    <span style="height: 1.1em;">|</span>
+                    <span style="height: 1.1em;">|</span>
+                    <span style="height: 1.1em;">|</span>
+                    <span style="height: 1.1em;">|</span>
+                    <span style="height: 1.1em;">|</span>
+                    <span style="height: 1.1em;">|</span>
+                    <span style="height: 1.1em;">|</span>
+                    <span style="height: 1.1em;">|</span>
+                    <span style="height: 1.1em;">|</span>
+                    <span style="height: 1.1em;">|</span>
+                    <span style="height: 1.1em;">|</span>
+                </div>
+                <div style="margin-top: 2.5em;">
+                    <div>
+                        <span class="textologcas">Login</span>
+                        <div style="width: 12em; height: 2em; background-color: #422b20; border-radius: 10px; display: flex; align-items: center;">
+                            <img src="../../../assets/img/usuario.png" style="width: 1.4em; height: 1.4em; margin-left: 0.5em;">
+                            <input type="text" placeholder="Digite seu CPF" class="senha" [(ngModel)]="username">
+                        </div>
+                        <div>
+                        <span class="textologcas">Senha</span>
+                        <div style="width: 12em; height: 2em; background-color: #422b20; border-radius: 10px; display: flex; align-items: center;">
+                            <img src="../../../assets/img/usuario.png" style="width: 1.4em; height: 1.4em; margin-left: 0.5em;">
+                            <input type="password" placeholder="Digite sua senha" class="senha" [(ngModel)]="password" >
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                          <div style="margin-top: 1em;" class="cadast">
+                            <a routerLink="/cadastro">
+                              <span class="addmsn">Cadastre-se</span>
+                            </a>
+                            </div>
+                          <div class="entrarto">
+                            <a style="cursor: pointer;"  class="login d-flex align-items-center" (click)="logar()">
+                              <span class="addmsn">Entrar</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div style="display: flex; justify-content: center;">
+                          <span *ngIf="erroLogin" class="erro">Login ou Senha Incorretos</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
