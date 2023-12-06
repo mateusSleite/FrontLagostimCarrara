@@ -12,6 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddScoped<BackDbContext>();
 builder.Services.AddTransient<IUsuarioService, UsuarioService>();
+builder.Services.AddTransient<IProductService, ProductService>();
 builder.Services.AddSingleton<CryptoService>(p => new(){
     InternalKeySize = 24,
     UpdatePeriod = TimeSpan.FromDays(1)

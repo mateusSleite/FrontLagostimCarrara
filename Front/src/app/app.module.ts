@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ClientServiceService } from '../app/services/client-service.service';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { LoginComponent } from './components/login/login.component';
 import { TelainicialComponent } from './components/telainicial/telainicial.component';
 import { CardapioComponent } from './components/cardapio/cardapio.component';
 import { CuponsComponent } from './components/cupons/cupons.component';
+import { AddProductModalComponent } from './components/add-product-modal/add-product-modal.component';
 
 const routes: Routes = [
   { path: '', component: TelainicialComponent },
@@ -30,14 +32,16 @@ const routes: Routes = [
     LoginComponent,
     TelainicialComponent,
     CardapioComponent,
-    CuponsComponent
+    CuponsComponent,
+    AddProductModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule
   ],
   exports: [RouterModule],
   providers: [ClientServiceService, UserGuard],

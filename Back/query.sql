@@ -74,9 +74,5 @@ create table PromocaoProduto(
 	IDPromocao int references Promocao(ID)
 );
 
-INSERT INTO Usuario (Nome, Cpf, Email, DataNasc, Numero, Senha, Salt, Adm)
-VALUES ('Guilherme Tavares', '72419879007', 'guilhermetavares@gmail.com', '2005-08-27', '41998947235', 'tavares123', 'tavares123', 1);
-
-
 
 select * from Usuario																	

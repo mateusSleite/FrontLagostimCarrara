@@ -9,12 +9,12 @@ Obs: 'Tem tela/Tem Interface' = Possui parte visual, mesmo sem funcionar.
 - [x] Possui tela de Administrador.
 - [ ] Possui tela de Pedidos.
 - [x] Possui tela de Cadastro de Produtos.
-- [ ] Possui tela de Cadastro de Promoções.
-- [ ] Possui tela do totem.
+- [x] Possui tela de Cadastro de Promoções.
+- [x] Possui tela do totem.
 - [ ] Possui tela dos gráficos.
 - [ ] Tela do totem tem interface para inserção de código da promoção.
 - [ ] Tela do totem tem interface para colocar itens na sacola.
-- [ ] Banco de dados criado com tabelas de Usuário, Pedido, ItemPedido, Produto, Promoção ou similar.
+- [x] Banco de dados criado com tabelas de Usuário, Pedido, ItemPedido, Produto, Promoção ou similar.
 - [x] Rotas no Frontend Configuradas.
 - [x] Projeto Backend C# criado.
 - [x] CORS Configurado.
@@ -31,10 +31,10 @@ Obs: 'Tem tela/Tem Interface' = Possui parte visual, mesmo sem funcionar.
 - [ ] Adm é capaz de ver produtos existentes.
 - [x] Adm é capaz de cadastrar novos produtos.
 - [ ] Adm é capaz de ver promoções existentes.
-- [ ] Adm é capaz de criar novas promoções.
+- [x] Adm é capaz de criar novas promoções.
 - [ ] Adm é capaz de ver Dashboard com dois gráficos de informações.
 - [ ] Gráficos do Dashboard realmente refletem os dados no banco.
-- [ ] É possível ver produtos existentes no Totem.
+- [x] É possível ver produtos existentes no Totem.
 - [ ] É possível adicionar itens em uma sacola.
 - [ ] Ao finalizar a compra o pedido é realmente registrado no banco de dados.
 - [ ] É possível ver o custo total do pedido.

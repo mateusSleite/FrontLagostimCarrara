@@ -133,3 +133,19 @@
     font-size: 0.8em;
     color: white;
 }
+.add {
+    width: 12em;
+    height: 4em;
+    background-color: #422b20;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.addtext {
+    color: #ffffff;
+    font-family: Insanicbc;
+}

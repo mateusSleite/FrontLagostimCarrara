@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\disrct\\Desktop\\ProjectLagostim\\Back\\Back.csproj": {}
+    "C:\\Users\\disrct\\desktop\\ProjectLagostim\\back\\Back.csproj": {}
   },
   "projects": {
-    "C:\\Users\\disrct\\Desktop\\ProjectLagostim\\Back\\Back.csproj": {
+    "C:\\Users\\disrct\\desktop\\ProjectLagostim\\back\\Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\disrct\\Desktop\\ProjectLagostim\\Back\\Back.csproj",
+        "projectUniqueName": "C:\\Users\\disrct\\desktop\\ProjectLagostim\\back\\Back.csproj",
         "projectName": "Back",
-        "projectPath": "C:\\Users\\disrct\\Desktop\\ProjectLagostim\\Back\\Back.csproj",
+        "projectPath": "C:\\Users\\disrct\\desktop\\ProjectLagostim\\back\\Back.csproj",
         "packagesPath": "C:\\Users\\disrct\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\disrct\\Desktop\\ProjectLagostim\\Back\\obj\\",
+        "outputPath": "C:\\Users\\disrct\\desktop\\ProjectLagostim\\back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\disrct\\AppData\\Roaming\\NuGet\\NuGet.Config"
