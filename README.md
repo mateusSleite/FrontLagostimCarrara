@@ -7,13 +7,13 @@ Obs: 'Tem tela/Tem Interface' = Possui parte visual, mesmo sem funcionar.
 - [x] Possui tela de usuário normal das promoções.
 - [x] Possui tela para visualizar código da promoção.
 - [x] Possui tela de Administrador.
-- [ ] Possui tela de Pedidos.
+- [x] Possui tela de Pedidos.
 - [x] Possui tela de Cadastro de Produtos.
 - [x] Possui tela de Cadastro de Promoções.
 - [x] Possui tela do totem.
-- [ ] Possui tela dos gráficos.
+- [x] Possui tela dos gráficos.
 - [ ] Tela do totem tem interface para inserção de código da promoção.
-- [ ] Tela do totem tem interface para colocar itens na sacola.
+- [x] Tela do totem tem interface para colocar itens na sacola.
 - [x] Banco de dados criado com tabelas de Usuário, Pedido, ItemPedido, Produto, Promoção ou similar.
 - [x] Rotas no Frontend Configuradas.
 - [x] Projeto Backend C# criado.
@@ -28,7 +28,7 @@ Obs: 'Tem tela/Tem Interface' = Possui parte visual, mesmo sem funcionar.
 - [x] Aplica slow Hash na senha do usuário.
 - [x] Login retorna JWT para o frontend que o guarda no Sessin Storage.
 - [x] Após o Login a página de usuário normal ou adm é mostrada corretamente.
-- [ ] Adm é capaz de ver produtos existentes.
+- [x] Adm é capaz de ver produtos existentes.
 - [x] Adm é capaz de cadastrar novos produtos.
 - [ ] Adm é capaz de ver promoções existentes.
 - [x] Adm é capaz de criar novas promoções.
