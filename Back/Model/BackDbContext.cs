@@ -31,13 +31,13 @@ public partial class BackDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=SJP-C-00003\\SQLEXPRESS;Initial Catalog=BackDB;Integrated Security=True;TrustServerCertificate=true");
+        => optionsBuilder.UseSqlServer("Data Source=X_PC\\SQLEXPRESS;Initial Catalog=BackDB;Integrated Security=True;TrustServerCertificate=true");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Imagem>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Imagem__3214EC2755ACB886");
+            entity.HasKey(e => e.Id).HasName("PK__Imagem__3214EC27C98189E4");
 
             entity.ToTable("Imagem");
 
@@ -47,7 +47,7 @@ public partial class BackDbContext : DbContext
 
         modelBuilder.Entity<Pedido>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Pedido__3214EC27DE40FE6E");
+            entity.HasKey(e => e.Id).HasName("PK__Pedido__3214EC27ED751C78");
 
             entity.ToTable("Pedido");
 
@@ -68,7 +68,7 @@ public partial class BackDbContext : DbContext
 
         modelBuilder.Entity<PedidoProduto>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__PedidoPr__3214EC27667BFFA5");
+            entity.HasKey(e => e.Id).HasName("PK__PedidoPr__3214EC27F16ECFF2");
 
             entity.ToTable("PedidoProduto");
 
@@ -87,7 +87,7 @@ public partial class BackDbContext : DbContext
 
         modelBuilder.Entity<Produto>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Produto__3214EC27C824CBCC");
+            entity.HasKey(e => e.Id).HasName("PK__Produto__3214EC275A069FC1");
 
             entity.ToTable("Produto");
 
@@ -114,7 +114,7 @@ public partial class BackDbContext : DbContext
 
         modelBuilder.Entity<Promocao>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Promocao__3214EC2788CA6F2E");
+            entity.HasKey(e => e.Id).HasName("PK__Promocao__3214EC2707E58839");
 
             entity.ToTable("Promocao");
 
@@ -141,7 +141,7 @@ public partial class BackDbContext : DbContext
 
         modelBuilder.Entity<PromocaoProduto>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Promocao__3214EC27D546BC85");
+            entity.HasKey(e => e.Id).HasName("PK__Promocao__3214EC279EA1C75B");
 
             entity.ToTable("PromocaoProduto");
 
@@ -160,7 +160,7 @@ public partial class BackDbContext : DbContext
 
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Usuario__3214EC27DC0B8AC3");
+            entity.HasKey(e => e.Id).HasName("PK__Usuario__3214EC27AC8A7F5D");
 
             entity.ToTable("Usuario");
 

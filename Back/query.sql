@@ -18,7 +18,7 @@ create table Imagem(
 );
 go
 
-create table Usuario(
+create table Usuario(	
 	ID int identity primary key,
 	Nome varchar(80) not null,
 	Cpf varchar(20) not null,
@@ -68,11 +68,10 @@ create table PedidoProduto(
 
 
 create table PromocaoProduto(
-	ID int identity primary key,
+	ID int identity primary k	ey,
 	Quantidade int not null,
 	IDPedido int references Pedido(ID),
 	IDPromocao int references Promocao(ID)
 );
-
 
 select * from Usuario																	

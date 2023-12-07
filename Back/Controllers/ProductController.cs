@@ -5,10 +5,15 @@ using Microsoft.AspNetCore.Cors;
 using System.Collections.Generic;
 using System.Text.Json;
 using Trevisharp.Security.Jwt;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using System;
+
+
 
 namespace Back.Controllers;
-using Back.Model;
 
+using Model;
 using DTO;
 using Services;
 
@@ -34,12 +39,26 @@ public class ProductController : ControllerBase
         return Ok();
     }
 
+    [HttpGet("product")]
+    [EnableCors("DefaultPolicy")]
+    public async Task<IActionResult> VerProduto(
+         [FromServices] IProductService service
+     )
+    {
+        var a = await service.Get();
+        var errors = new List<string>();
+        if (errors.Count > 0)
+            return BadRequest(errors);
+
+        return Ok(new { a });
+    }
+
     [DisableRequestSizeLimit]
     [HttpPost("imagem")]
     [EnableCors("DefaultPolicy")]
     public async Task<IActionResult> AddImage(
-    [FromServices] CryptoService security
-)
+        [FromServices] CryptoService security
+    )
     {
         var jwtData = Request.Form["jwt"];
         var jwtObj = JsonSerializer.Deserialize<JwtToken>(jwtData);
@@ -61,7 +80,6 @@ public class ProductController : ControllerBase
         if (file.Length < 1)
             return BadRequest();
 
-        // Declare ms antes de usá-la
         using MemoryStream ms = new MemoryStream();
 
         await file.CopyToAsync(ms);
@@ -77,5 +95,26 @@ public class ProductController : ControllerBase
         {
             imgID = img.Id
         });
+    }
+
+    [HttpGet("image/{photoId}")]
+    [EnableCors("DefaultPolicy")]
+    public async Task<IActionResult> GetImage(
+        int photoId,
+        [FromServices] ISecurityService security,
+        [FromServices] BackDbContext ctx
+    )
+    {
+        var query =
+            from imagem in ctx.Imagems
+            where imagem.Id == photoId
+            select imagem;
+
+
+        var photo = await query.FirstOrDefaultAsync();
+        if (photo is null)
+            return NotFound();
+
+        return File(photo.Foto, "image/jpeg");
     }
 }

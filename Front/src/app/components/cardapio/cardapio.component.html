@@ -37,33 +37,20 @@
       </div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-4 d-flex justify-content-center">
+          <div class="col-sm-4 d-flex justify-content-center" *ngFor="let product of produtos">
             <div class="card">
               <div class="cardwhite">
                 <div class="blob">
-                  <span class="titulopro">Lagostão</span>
-                  <img src="../../../assets/img/burguerzinho.png" alt="" style="height: 5.5em; width: 6.5em;">
-                  <span class="titulodesc">Alface, Salada, Bacon e 2 Hambúrgueres</span>
+                  <span class="titulopro">{{ product.nome }}</span>
+                  <img src="{{'http://localhost:5229/product/image/' + product.idimagem}}" alt="" style="height: 5.5em; width: 6.5em;">
+                  <span class="titulodesc">{{ product.descricao }}</span>
                   <img src="../../../assets/img/tabua.png" style="width: 8em; margin-top: -0.2em;">
-                  <span class="preco">R$28,90</span>
+                  <span class="preco">{{ product.preco | currency:'BRL' }}</span>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-4 d-flex justify-content-center">
-            <div class="card">
-              <div class="cardwhite">
-                <div class="blob">
-                  <span class="titulopro">Lagostin</span>
-                  <img src="../../../assets/img/burguerzinho.png" alt="" style="height: 5.5em; width: 6.5em;">
-                  <span class="titulodesc">Alface, Salada e 1 Hambúrguer</span>
-                  <img src="../../../assets/img/tabua.png" style="width: 8em; margin-top: -0.2em;">
-                  <span class="preco">R$18,89</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          </div>  
+        </div>        
       </div>
     </div>
   </div>

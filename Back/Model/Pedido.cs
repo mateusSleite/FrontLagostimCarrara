@@ -9,7 +9,9 @@ public partial class Pedido
 
     public DateTime DataPedido { get; set; }
 
-    public bool Verificacao { get; set; }
+    public bool Finalizado { get; set; }
+
+    public bool Entrege { get; set; }
 
     public decimal Valor { get; set; }
 

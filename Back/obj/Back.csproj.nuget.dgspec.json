@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\disrct\\desktop\\ProjectLagostim\\back\\Back.csproj": {}
+    "C:\\Users\\G3MEOS\\desktop\\FrontLagostimCarrara\\back\\Back.csproj": {}
   },
   "projects": {
-    "C:\\Users\\disrct\\desktop\\ProjectLagostim\\back\\Back.csproj": {
+    "C:\\Users\\G3MEOS\\desktop\\FrontLagostimCarrara\\back\\Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\disrct\\desktop\\ProjectLagostim\\back\\Back.csproj",
+        "projectUniqueName": "C:\\Users\\G3MEOS\\desktop\\FrontLagostimCarrara\\back\\Back.csproj",
         "projectName": "Back",
-        "projectPath": "C:\\Users\\disrct\\desktop\\ProjectLagostim\\back\\Back.csproj",
-        "packagesPath": "C:\\Users\\disrct\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\disrct\\desktop\\ProjectLagostim\\back\\obj\\",
+        "projectPath": "C:\\Users\\G3MEOS\\desktop\\FrontLagostimCarrara\\back\\Back.csproj",
+        "packagesPath": "C:\\Users\\G3MEOS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\G3MEOS\\desktop\\FrontLagostimCarrara\\back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\disrct\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\G3MEOS\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\sdk\\7.0.311\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -81,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

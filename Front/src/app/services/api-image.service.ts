@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class ApiProductService {
+export class ApiImageService {
   backend = 'http://localhost:5229'
 
   constructor(private http: HttpClient) { }
